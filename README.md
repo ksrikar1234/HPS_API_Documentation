@@ -1,1 +1,1 @@
-[a relative link](installatjon.md)
+[a relative link](Installatjon.md)
