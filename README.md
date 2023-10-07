@@ -32,6 +32,14 @@ To get started with the HPS Application Framework, check out the [Getting Starte
 For detailed information about the API provided by the HPS Application Framework, consult the [API Reference](./docs/api-reference.md). This reference guide includes comprehensive documentation for all available classes, methods, and modules.
 
 
+## Examples
+
+To see practical examples of how to use the HPS Application Framework, refer to the [Examples](./examples) directory in this repository. You'll find a variety of sample projects that demonstrate different aspects of the framework.
+
+
+---
+
+
 ```cpp
 ImGui::Text("Hello, world %d", 123);
 if (ImGui::Button("Save"))
@@ -44,13 +52,6 @@ ImGui::SliderFloat("float", &f, 0.0f, 1.0f);
 
 ```cpp
 
-
-## Examples
-
-To see practical examples of how to use the HPS Application Framework, refer to the [Examples](./examples) directory in this repository. You'll find a variety of sample projects that demonstrate different aspects of the framework.
-
-
----
 
 Feel free to explore the documentation and examples to make the most of the HPS Application Framework. If you encounter any issues or have questions, please don't hesitate to [open an issue](https://github.com/your-username/hps-application-framework/issues) on GitHub.
 
