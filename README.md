@@ -35,17 +35,7 @@ For detailed information about the API provided by the HPS Application Framework
 
 To see practical examples of how to use the HPS Application Framework, refer to the [Examples](./examples) directory in this repository. You'll find a variety of sample projects that demonstrate different aspects of the framework.
 
-```cpp
-ImGui::Text("Hello, world %d", 123);
-if (ImGui::Button("Save"))
-    MySaveFunction();
-ImGui::InputText("string", buf, IM_ARRAYSIZE(buf));
-ImGui::SliderFloat("float", &f, 0.0f, 1.0f);
-```
-![sample code output (dark, segoeui font, freetype)](https://user-images.githubusercontent.com/8225057/191050833-b7ecf528-bfae-4a9f-ac1b-f3d83437a2f4.png)
-![sample code output (light, segoeui font, freetype)](https://user-images.githubusercontent.com/8225057/191050838-8742efd4-504d-4334-a9a2-e756d15bc2ab.png)
 
-```cpp
 
 
 ---
