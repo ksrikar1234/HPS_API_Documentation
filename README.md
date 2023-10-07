@@ -29,7 +29,7 @@ To get started with the HPS Application Framework, check out the [Getting Starte
 
 ## API Reference
 
-For detailed information about the API provided by the HPS Application Framework, consult the [API Reference](API Reference.md). This reference guide includes comprehensive documentation for all available classes, methods, and modules.
+For detailed information about the API provided by the HPS Application Framework, consult the [API Reference](API=Reference.md). This reference guide includes comprehensive documentation for all available classes, methods, and modules.
 
 
 ## Examples
