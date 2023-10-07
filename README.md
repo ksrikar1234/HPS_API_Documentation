@@ -41,11 +41,40 @@ To see practical examples of how to use the HPS Application Framework, refer to 
 
 
 ```cpp
-ImGui::Text("Hello, world %d", 123);
-if (ImGui::Button("Save"))
-    MySaveFunction();
-ImGui::InputText("string", buf, IM_ARRAYSIZE(buf));
-ImGui::SliderFloat("float", &f, 0.0f, 1.0f);
+
+/*
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////  Model_Data_Structures   \                      | <--- User Intent <-------\                           ///
+////  Model_Data_base ---------- <--> Controller <--/                           |-----> VIEW ( UI + Model ) ///
+////  Model_Operation_Kernels /                     \ ---> Renderable Entity--->/                           ///
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+#include "app_core.hpp"
+
+int main()
+{
+   HPS::controller app_controller; 
+   
+   app_controller.model_db.to_be_send_data = 100;
+   app_controller.model_db.model.vertices.push_back(4.0);
+   app_controller.model_db.model.vertices.push_back(4.0);
+   app_controller.model_db.model.vertices.push_back(4.0);
+  // HPS::Model m1 ;
+  // app_controller.model_db.model_operation_kernels.model_scaling_operation(m1 , 6.0f);
+   
+   app_controller.pass_data_from_model_db_to_view();
+   
+   while(!app_controller.viewer.requested_exit())
+   {   
+     app_controller.present_view(); 
+     app_controller.execute_intent();
+   }
+   
+}
+
+
+
 ```
 ![sample code output (dark, segoeui font, freetype)](https://user-images.githubusercontent.com/8225057/191050833-b7ecf528-bfae-4a9f-ac1b-f3d83437a2f4.png)
 ![sample code output (light, segoeui font, freetype)](https://user-images.githubusercontent.com/8225057/191050838-8742efd4-504d-4334-a9a2-e756d15bc2ab.png)
