@@ -18,10 +18,14 @@ The HPS Application Framework is a powerful tool for developing applications. It
 
 To install the HPS Application Framework, follow these steps:
 
+```
+
 1. First, clone this repository to your local machine:
 2. cd APP_Framework
 3. Run qmake app.pro -r
 4. make release -j 8
+
+```
 
 [Installation](Installation.md)
 
