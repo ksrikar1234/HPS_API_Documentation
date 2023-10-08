@@ -88,6 +88,7 @@ int main()
 ```cpp
 
 
-Feel free to explore the documentation and examples to make the most of the HPS Application Framework. If you encounter any issues or have questions, please don't hesitate to [open an issue](https://github.com/your-username/HPS_API_Documentation/issues) on GitHub.
+Feel free to explore the documentation and examples to make the most of the HPS Application Framework.
+If you encounter any issues or have questions, please don't hesitate to [open an issue](https://github.com/ksrikar1234/HPS_API_Documentation/issues) on GitHub.
 
 Happy coding!
