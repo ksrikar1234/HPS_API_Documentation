@@ -20,9 +20,9 @@ To install the HPS Application Framework, follow these steps:
 1. First, clone this repository to your local machine:
 ```
 
-   cd APP_Framework
-   qmake app.pro -r
-   make release -j 8
+cd APP_Framework
+qmake app.pro -r
+make release -j 8
 
 ```
 
